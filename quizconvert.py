@@ -1,6 +1,6 @@
 import re  # we need to use regex
 
-unit = 2
+unit = 6
 baseCat = 'IPY Quiz '+ str(unit) + ' Testing'
 
 
@@ -42,7 +42,7 @@ for x in read:
         #sanitize special chars
         b = special(b)
         
-        buf = buf + '::IPYQuiz1-' + str(c)+ '::[html]'+ b  
+        buf = buf + '::IPYQuiz' + str(unit) + '-' + str(c)+ '::[html]'+ b  
         c = c+1
 
     elif re.match("^[*][A-Z][)]", x): #correct answer
