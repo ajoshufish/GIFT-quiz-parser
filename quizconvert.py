@@ -3,7 +3,6 @@ import re  # we need to use regex
 unit = 6
 baseCat = 'IPY Quiz '+ str(unit) + ' Testing'
 
-
 #escape special characters
 def special(x):
     spec = ['~', '=', '#', '{', '}']
@@ -66,10 +65,8 @@ for x in read:
         buf = buf + special(x)
         #input processing for special chars
         
-
 #now we close out the quiz, print it to our output file, and close our files
 buf = buf + '\n}'
 write.write(buf)
 read.close()
 write.close()
-
