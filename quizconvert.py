@@ -12,7 +12,7 @@ def special(x):
     return x
 
 #setup our file i/o with req encoding
-read = open("example.txt", 'r', encoding="utf8")
+read = open("quiz.txt", 'r', encoding="utf8")
 write = open("output.txt", 'w', encoding='utf-8')
 
 #setup our initial category/header, question counter, and split between Q and A.
